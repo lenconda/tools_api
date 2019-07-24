@@ -1,7 +1,9 @@
 {
   "version": 2,
-  "name": "my-nodejs-project",
   "builds": [
-    { "src": "bin/www", "use": "@now/node" }
+    { "src": "app.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/app.js" }
   ]
 }
