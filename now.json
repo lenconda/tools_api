@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "my-nodejs-project",
+  "builds": [
+    { "src": "bin/**/*", "use": "@now/node" },
+    { "src": "*.js", "use": "@now/node" }
+  ]
+}
